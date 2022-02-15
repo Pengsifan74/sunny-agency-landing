@@ -1,4 +1,56 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* header */
+header {
+    background-image: url("../images/desktop/image-header.jpg");
+    margin: 0;
+    padding: 0;
+}
+
+.topNav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.topLogo a {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-left: 1rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.containerLinks ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.containerLinks ul li {
+    display: inline;
+}
+
+li {
+    margin: 1rem;
+}
+
 
 /* Frontend Mentor CSS */
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
