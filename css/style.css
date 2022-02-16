@@ -1,6 +1,9 @@
 body {
     margin: 0;
     padding: 0;
+    font-size: 18px;
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Fraunces', serif;
 }
 
 a {
@@ -17,17 +20,27 @@ header {
 .topNav {
     display: flex;
     justify-content: space-between;
-    margin-top: 2rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.topLogo {
+    margin-top: 2rem;  
 }
 
 .topLogo a {
     font-size: 2rem;
     font-weight: bold;
     margin-left: 1rem;
+    color: white;
 }
 
 ul {
     list-style-type: none;
+}
+
+.containerLinks {
+    margin-top: 2rem;
 }
 
 .containerLinks ul {
@@ -44,6 +57,14 @@ li {
     margin: 1rem;
 }
 
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.8rem;
+    margin-top: 5rem;
+}
 
 /* Frontend Mentor CSS */
 .attribution {
@@ -53,4 +74,24 @@ li {
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 375px) {
+    .topLinks {
+        display: none;
+    }
+
+    .topNav a.icon {
+        display: block;
+        position: absolute;
+        top: 2rem;
+        right: 1rem;
+    }
+
+    .topLogo a {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-left: 1rem;
+    }
+
 }

@@ -15,15 +15,21 @@
 
     <link rel="stylesheet" href="./css/style.css" />
 
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap"
+        rel="stylesheet">
+
     <script defer src="./js/script.js"></script>
 </head>
 
 <body>
     <header>
         <div class="topNav">
-            <div class="topLogo"><a href="#home" >sunnyside</a></div>
+            <div class="topLogo"><a href="#home">sunnyside</a></div>
             <div class="containerLinks">
-                <ul>
+                <ul class="topLinks">
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#projects">Projects</a></li>
@@ -32,6 +38,9 @@
                     </li>
                 </ul>
             </div>
+            <a href="javascript:void(0);" class="icon" onclick="toggle()">
+                <img src="./images/icon-hamburger.svg" alt="Burger icon">
+            </a>
         </div>
 
         <h1>We are creatives</h1>
