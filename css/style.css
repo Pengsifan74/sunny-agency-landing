@@ -1,4 +1,5 @@
 body {
+    max-width: 1440px;
     margin: 0;
     padding: 0;
     font-size: 18px;
@@ -10,11 +11,33 @@ a {
     text-decoration: none;
 }
 
+/* General */
+.container {
+    max-width: 1440px;
+    margin: auto;
+}
+
 /* header */
 header {
     background-image: url("../images/desktop/image-header.jpg");
     margin: 0;
     padding: 0;
+    height: 700px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.topLinks {
+    display: block;
+}
+
+.topLinks li a {
+    color: hsl(0, 0%, 100%);
+}
+
+.icon {
+    display: none;
 }
 
 .topNav {
@@ -25,13 +48,13 @@ header {
 }
 
 .topLogo {
-    margin-top: 2rem;  
+    margin-top: 2rem;
 }
 
 .topLogo a {
     font-size: 2rem;
     font-weight: bold;
-    margin-left: 1rem;
+    margin-left: 2rem;
     color: white;
 }
 
@@ -59,11 +82,40 @@ li {
 
 h1 {
     text-align: center;
-    color: white;
-    font-size: 1.8rem;
+    color: hsl(0, 0%, 100%);
+    font-size: 3rem;
     text-transform: uppercase;
     letter-spacing: 0.8rem;
     margin-top: 5rem;
+}
+
+.arrowDown {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+/* Main */
+.containerTransform {
+    display: flex;
+}
+
+.textTransform {
+    width: 50%;
+}
+
+.imageTransform {
+    background-image: url("../images/desktop/image-transform.jpg");
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.textTransform h2 {
+    margin: 5rem 5rem 1rem 5rem;
 }
 
 /* Frontend Mentor CSS */
@@ -76,7 +128,20 @@ h1 {
     color: hsl(228, 45%, 44%);
 }
 
+
 @media screen and (max-width: 375px) {
+
+    /* Header & general */
+    header {
+        background-image: url("../images/mobile/image-header.jpg");
+        margin: 0;
+        padding: 0;
+        height: 500px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
     .topLinks {
         display: none;
     }
@@ -94,4 +159,73 @@ h1 {
         margin-left: 1rem;
     }
 
+    h1 {
+        text-align: center;
+        color: white;
+        font-size: 3rem;
+        font-weight: bolder;
+        text-transform: uppercase;
+        letter-spacing: 0.5rem;
+        margin-top: 5rem;
+    }
+
+    /* main */
+    .containerTransform {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .textTransform {
+        width: 100%;
+    }
+
+    .imageTransform {
+        background-image: url("../images/desktop/image-transform.jpg");
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        height: 400px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .textTransform h2 {
+        font-size: 1.8rem;
+        margin: 3rem 2rem 1rem 2rem;
+        text-align: center;
+        color: hsl(212, 27%, 19%);
+    }
+
+    .textTransform p {
+        font-size: 1rem;
+        text-align: center;
+        margin: 2rem 1.5rem 1rem 1.5rem;
+        color: hsl(198, 62%, 26%);
+    }
+
+    .linkTransform {
+        text-align: center;
+        width: 100%;
+    }
+
+    .linkTransform a {
+        font-size: 1rem;
+        text-transform: uppercase;
+        text-decoration: underline;
+        text-decoration-color: hsl(51, 100%, 49%);
+        text-decoration-thickness: 0.3rem;
+        font-weight: bolder;
+        color: hsl(212, 27%, 19%);
+    }
+
+    .imageTransform {
+        background-image: url("../images/mobile/image-transform.jpg");
+        margin: 0;
+        padding: 0;
+        height: 300px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 }
