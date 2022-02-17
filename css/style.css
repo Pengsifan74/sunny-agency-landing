@@ -1,5 +1,4 @@
 body {
-    max-width: 1440px;
     margin: 0;
     padding: 0;
     font-size: 18px;
@@ -22,7 +21,7 @@ header {
     background-image: url("../images/desktop/image-header.jpg");
     margin: 0;
     padding: 0;
-    height: 700px;
+    height: 750px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -83,15 +82,15 @@ li {
 h1 {
     text-align: center;
     color: hsl(0, 0%, 100%);
-    font-size: 3rem;
+    font-size: 3.5vw;
     text-transform: uppercase;
-    letter-spacing: 0.8rem;
+    letter-spacing: 0.5rem;
     margin-top: 5rem;
 }
 
 .arrowDown {
     text-align: center;
-    margin-top: 3rem;
+    margin-top: 6rem;
 }
 
 /* Main */
@@ -108,14 +107,82 @@ h1 {
     width: 50%;
     margin: 0;
     padding: 0;
-    height: 400px;
+    height: 600px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .textTransform h2 {
-    margin: 5rem 5rem 1rem 5rem;
+    font-size: 2.5vw;
+    margin: 9rem 9vw 1rem 9vw;
+    color: hsl(212, 27%, 19%);
+}
+
+.textTransform p {
+    font-size: 1.2vw;
+    margin: 3vw 3vw 1vw 9vw;
+    color: hsl(230, 10%, 55%);
+}
+
+.linkTransform {
+    margin: 3vw 5vw 1vw 9vw;
+}
+
+.linkTransform a {
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-decoration-color: hsl(51, 100%, 49%);
+    text-decoration-thickness: 0.3rem;
+    font-weight: bolder;
+    color: hsl(212, 27%, 19%);
+}
+
+.containerAudience {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.textAudience {
+    width: 50%;
+}
+
+.imageAudience{
+    background-image: url("../images/desktop/image-stand-out.jpg");
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.textAudience h2 {
+    font-size: 2.5vw;
+    margin: 9rem 9vw 1rem 9vw;
+    color: hsl(212, 27%, 19%);
+}
+
+.textAudience p {
+    font-size: 1.2vw;
+    margin: 3vw 3vw 1vw 9vw;
+    color: hsl(230, 10%, 55%);
+}
+
+.linkAudience {
+    margin: 3vw 5vw 1vw 9vw;
+}
+
+.linkAudience a {
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-decoration-color: hsl(51, 100%, 49%);
+    text-decoration-thickness: 0.3rem;
+    font-weight: bolder;
+    color: hsl(212, 27%, 19%);
 }
 
 /* Frontend Mentor CSS */
@@ -162,11 +229,16 @@ h1 {
     h1 {
         text-align: center;
         color: white;
-        font-size: 3rem;
+        font-size: 2rem;
         font-weight: bolder;
         text-transform: uppercase;
         letter-spacing: 0.5rem;
         margin-top: 5rem;
+    }
+
+    .arrowDown {
+        text-align: center;
+        margin-top: 3rem;
     }
 
     /* main */
@@ -180,7 +252,7 @@ h1 {
     }
 
     .imageTransform {
-        background-image: url("../images/desktop/image-transform.jpg");
+        background-image: url("../images/mobile/image-transform.jpg");
         width: 100%;
         margin: 0;
         padding: 0;
@@ -201,12 +273,12 @@ h1 {
         font-size: 1rem;
         text-align: center;
         margin: 2rem 1.5rem 1rem 1.5rem;
-        color: hsl(198, 62%, 26%);
+        color: hsl(230, 10%, 55%);
     }
 
     .linkTransform {
         text-align: center;
-        width: 100%;
+        margin-bottom: 4rem;
     }
 
     .linkTransform a {
@@ -219,13 +291,52 @@ h1 {
         color: hsl(212, 27%, 19%);
     }
 
-    .imageTransform {
-        background-image: url("../images/mobile/image-transform.jpg");
+    .containerAudience {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .textAudience {
+        width: 100%;
+    }
+
+    .imageAudience {
+        background-image: url("../images/mobile/image-stand-out.jpg");
+        width: 100%;
         margin: 0;
         padding: 0;
-        height: 300px;
+        height: 400px;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+    }
+
+    .textAudience h2 {
+        font-size: 1.8rem;
+        margin: 3rem 2.5rem 1rem 2.5rem;
+        text-align: center;
+        color: hsl(212, 27%, 19%);
+    }
+
+    .textAudience p {
+        font-size: 1rem;
+        text-align: center;
+        margin: 2rem 1.5rem 1rem 1.5rem;
+        color: hsl(230, 10%, 55%);
+    }
+
+    .linkAudience {
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+
+    .linkAudience a {
+        font-size: 1rem;
+        text-transform: uppercase;
+        text-decoration: underline;
+        text-decoration-color: hsl(51, 100%, 49%);
+        text-decoration-thickness: 0.3rem;
+        font-weight: bolder;
+        color: hsl(212, 27%, 19%);
     }
 }
