@@ -304,6 +304,57 @@ h1 {
     color: hsl(228, 45%, 44%);
 }
 
+/* Main 4pics */
+.container4pics {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.item4pics1 {
+    width: 25%;
+    background-image: url("../images/desktop/image-gallery-milkbottles.jpg");
+    margin: 0;
+    padding: 0;
+    height: 550px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.item4pics2 {
+    width: 25%;
+    background-image: url("../images/desktop/image-gallery-orange.jpg");
+    margin: 0;
+    padding: 0;
+    height: 550px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.item4pics3 {
+    width: 25%;
+    background-image: url("../images/desktop/image-gallery-cone.jpg");
+    margin: 0;
+    padding: 0;
+    height: 550px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.item4pics4 {
+    width: 25%;
+    background-image: url("../images/desktop/image-gallery-sugarcubes.jpg");
+    margin: 0;
+    padding: 0;
+    height: 550px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
 
 @media screen and (max-width: 375px) {
 
@@ -521,7 +572,7 @@ h1 {
     .containerPeopleTestimonial {
         display: contents;
     }
-    
+
     .peopleTestimonial {
         width: 100%;
         text-align: center;
@@ -546,5 +597,55 @@ h1 {
     .imageTestimonial img {
         width: 25%;
         border-radius: 50%;
+    }
+
+    /* Main 4pics */
+    .container4pics {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .item4pics1 {
+        width: 50%;
+        background-image: url("../images/mobile/image-gallery-milkbottles.jpg");
+        margin: 0;
+        padding: 0;
+        height: 180px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .item4pics2 {
+        width: 50%;
+        background-image: url("../images/mobile/image-gallery-orange.jpg");
+        margin: 0;
+        padding: 0;
+        height: 180px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .item4pics3 {
+        width: 50%;
+        background-image: url("../images/mobile/image-gallery-cone.jpg");
+        margin: 0;
+        padding: 0;
+        height: 180px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .item4pics4 {
+        width: 50%;
+        background-image: url("../images/mobile/image-gallery-sugar-cubes.jpg");
+        margin: 0;
+        padding: 0;
+        height: 180px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 }
