@@ -518,7 +518,12 @@ h1 {
         letter-spacing: 0.2rem;
     }
 
+    .containerPeopleTestimonial {
+        display: contents;
+    }
+    
     .peopleTestimonial {
+        width: 100%;
         text-align: center;
         padding-top: 4rem;
     }
