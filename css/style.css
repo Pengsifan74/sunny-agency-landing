@@ -35,6 +35,17 @@ header {
     color: hsl(0, 0%, 100%);
 }
 
+.navContact {
+    background-color: white;
+    padding: 1rem 1.5rem;
+    border-radius: 25px;
+}
+
+.topLinks .navContact a {
+    color: black;
+    text-transform: uppercase;
+}
+
 .icon {
     display: none;
 }
