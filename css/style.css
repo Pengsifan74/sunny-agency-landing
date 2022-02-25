@@ -416,9 +416,43 @@ footer {
         background-size: cover;
     }
 
+    .topNav {
+        display: flex;
+        justify-content: space-between;
+        overflow: hidden;
+        position: relative;
+    }
+
     .topLinks {
         display: none;
+        flex-direction: column;
+        width: 100%;
+        height: 250px;
+        padding: 1rem;
+        background-color: white;
     }
+
+    .topLinks li a {
+        color: hsl(232, 10%, 55%);
+        margin: 1rem;
+    }
+    
+    .navContact {
+        background-color: yellow;
+        padding: 1rem 1.5rem;
+        border-radius: 25px;
+    }
+    
+    .topLinks .navContact a {
+        color: black;
+        background-color: yellow;
+        text-transform: uppercase;
+    }
+    
+    .icon {
+        display: none;
+    }
+    
 
     .topNav a.icon {
         display: block;

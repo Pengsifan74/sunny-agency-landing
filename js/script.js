@@ -1,8 +1,8 @@
 function toggle() {
-    let x =document.querySelector(".topLinks");
-    if (x.getElementsByClassName.display === "block") {
-        x.getElementsByClassName.display = "none";
+    let topLogo = document.querySelector(".topLinks");
+    if (topLogo.style.display === "flex") {
+        topLogo.style.display = "none";
     } else {
-        x.getElementsByClassName.display = "block";
+        topLogo.style.display = "flex";
     }
 }
